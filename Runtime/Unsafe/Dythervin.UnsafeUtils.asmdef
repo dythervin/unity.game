@@ -1,0 +1,14 @@
+{
+    "name": "Dythervin.UnsafeUtils",
+    "rootNamespace": "Dythervin.UnsafeUtils",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

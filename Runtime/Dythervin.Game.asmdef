@@ -1,0 +1,14 @@
+﻿{
+  "name": "Dythervin.Game",
+  "rootNamespace": "Dythervin.Game",
+  "references": [
+    "GUID:d8b63aba1907145bea998dd612889d6b",
+    "GUID:2665a8d13d1b3f18800f46e256720795",
+    "GUID:b11a47de063242e48cced591c7538b96",
+    "GUID:0d2722be3221441990b3d439a49d3d00",
+    "GUID:e474c3ddf8864696901c2749bb16d8e7",
+    "GUID:f56dc0875763451db016c39dcbb974dd",
+    "GUID:0031e864adfd431f8c8176db3609a3cb",
+    "GUID:32e9b039423540a9957ce35545630ab5"
+  ]
+}
