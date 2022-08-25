@@ -21,8 +21,8 @@ namespace Dythervin.Game.Constants
         // [UnityEditor.Callbacks.DidReloadScripts]
         private static void GenerateLabels()
         {
-            // RebuildTagsAndLayersClasses("Assets/Game/Scripts/Constants");
-            RebuildTagsAndLayersClassesCaller();
+            RebuildTagsAndLayersClasses("Assets/Game/Scripts/Constants");
+            // RebuildTagsAndLayersClassesCaller();
         }
 
         private static void RebuildTagsAndLayersClassesCaller([CallerFilePath] string path = "")
@@ -81,11 +81,11 @@ namespace Dythervin.Game.Constants
                 output = $"{output}{additionalMembers}";
 
             output = $"{output}\t\tpublic static readonly IReadOnlyList<string> All = new string[]";
-            output = $"{output}\n\t\t{{\n\t\t\t\"{string.Join("\",\n\t\t\t\"", labelsArray)}\"\n\t\t}};\n\n";
+            output = $"{output}\n\t\t{{\n\t\t\t{string.Join(",\n\t\t\t", labelsArray)}\n\t\t}};\n\n";
 
             for (int i = 0; i < labelsArray.Length; i++)
             {
-                output = $"{output}\t\tpublic static string {ToVarName(labelsArray[i])} => All[{i}];\n";
+                output = $"{output}\t\tpublic const string {ToVarName(labelsArray[i])} = \"{labelsArray[i]}\";\n";
             }
 
             output = $"{output}\t}}\n}}";

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿#if DYTHERVIN_LABELS
+using System.Collections.Generic;
 using UnityEngine;
 #if UNITY_EDITOR && ODIN_INSPECTOR
 using Sirenix.OdinInspector;
@@ -40,3 +41,4 @@ namespace Dythervin.Game.Tags
 #endif
     }
 }
+#endif

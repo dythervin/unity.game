@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿#if DYTHERVIN_LABELS
+using UnityEngine;
 
 namespace Dythervin.Game.Tags
 {
@@ -20,3 +21,4 @@ namespace Dythervin.Game.Tags
         }
     }
 }
+#endif
